@@ -1,0 +1,93 @@
+.h1 {
+    /* existing styles */
+    font-size: 4vw; /* responsive font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* subtle shadow */
+    padding: 20px 0; /* more vertical padding */
+    line-height: 1.2; /* improve line spacing */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 6vw; /* larger font size for smaller screens */
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    /* existing styles */
+    animation: popIn 1s ease-out forwards; /* pop in animation */
+}
+
+body {
+    /* Adjust the linear gradient for a darker gray background */
+    background: linear-gradient(to bottom, #d3d3d3 0%, #808080 100%);
+    
+    /* Ensure the background covers the entire page */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Keep the font styling for overall consistency */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+
+#addList {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#Delete {
+    color: red
+    
+}
+
+#list {
+    list-style-type: circle;margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.pop-out-button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for the transform */
+}
+.pop-out-button:hover {
+    transform: scale(1.2); /* Scale the button to 120% of its original size */
+}
+
+#impact-font {
+    font-family: 'Impact', sans-serif;
+    
+}
+
+#list {
+    list-style-type: none; /* Removes the default list-style */
+    padding-left: 0; /* Removes the default padding */
+    text-align: left; /* Aligns text to the left */
+}
+
+li {
+    padding-left: 20px; /* Adds some padding to the left of list items */
+}
